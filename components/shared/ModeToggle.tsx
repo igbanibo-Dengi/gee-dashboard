@@ -3,7 +3,7 @@
 import * as React from "react"
 import { useTheme } from "next-themes"
 import Moon from '../../public/icons/moon.svg'
-import Sun from '../../public/icons/Sun.svg'
+import Sun from '../../public/icons/sun.svg'
 import Image from "next/image"
 
 
