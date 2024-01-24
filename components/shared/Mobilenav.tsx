@@ -58,7 +58,7 @@ const Mobilenav = () => {
                         </Link>
                         <Link href='/'>
                             <Image
-                                src='/icons/icon.svg'
+                                src='/icons/Icon.svg'
                                 width={40}
                                 height={40}
                                 alt='logo'
