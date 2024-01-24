@@ -31,7 +31,7 @@ const invoicesData = [
         name: 'Jaydon Vaccaro',
         date: 'Dec 5, 2023',
         amount: '$60,000',
-        status: 'Pending',
+        status: 'Refund',
         avatarUrl: '/icons/jaydon.png',
         avatarFallback: 'AJ',
     },
@@ -47,7 +47,7 @@ const invoicesData = [
         name: 'Cooper Press',
         date: 'Feb 10, 2024',
         amount: '$45,000',
-        status: 'Pending',
+        status: 'Refund',
         avatarUrl: '/icons/cooper.png',
         avatarFallback: 'ES',
     },
@@ -104,7 +104,9 @@ const OrdersTable = () => {
                             </TableCell>
                             <TableCell className='whitespace-nowrap'>{invoice.date}</TableCell>
                             <TableCell>{invoice.amount}</TableCell>
-                            <TableCell className="text-right">{invoice.status}</TableCell>
+                            <TableCell className="text-right" style={{ color: invoice.status === 'Paid' ? '#34CAA5' : '#ED544E' }}>
+                                {invoice.status}
+                            </TableCell>
                             <TableCell className="text-right">
                                 <Dialog>
                                     <DialogTrigger className='flex gap-2 items-center'>
