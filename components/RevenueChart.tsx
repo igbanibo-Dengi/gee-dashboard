@@ -63,7 +63,7 @@ const data = [
 
 export function RevenueChart() {
     return (
-        <ResponsiveContainer width="100%" height={350}>
+        <ResponsiveContainer width="100%" height={350} className="text-foreground">
             <BarChart data={data}>
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis
@@ -80,7 +80,12 @@ export function RevenueChart() {
                     axisLine={false}
                     tickFormatter={(value) => `$${value}`}
                 />
-                <Tooltip />
+                <Tooltip
+                    cursor={{ stroke: 'none' }}
+                    contentStyle={{ background: '#000000', border: 'none' }}
+                    label={{ fill: '#fffffff' }}
+                    itemStyle={{ color: '#ffffff' }} // Set the text color of the payload
+                />
                 <Bar dataKey="total" fill="#34CAA5" radius={[40, 40, 0, 0]} barSize={30} />
             </BarChart>
         </ResponsiveContainer>
