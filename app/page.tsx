@@ -79,7 +79,7 @@ export default function Home() {
             </div>
 
             <h3 className="text-muted-foreground text-lg">Total Refund</h3>
-            <p className="text-2xl font-semibold">350</p>
+            <p className="text-2xl font-semibold">270</p>
             <span className="flex justify-between items-center">
               <Badge className="bg-red-500/40 text-red-500 flex gap-1 text-xs font-normal"><TrendingUp size={16} strokeWidth={1} /> 23,5%</Badge>
               <p className="text-[14px] text-muted-foreground">vs. previous month</p>
@@ -102,7 +102,7 @@ export default function Home() {
             </div>
 
             <h3 className="text-muted-foreground text-lg">Average Sales</h3>
-            <p className="text-2xl font-semibold">350</p>
+            <p className="text-2xl font-semibold">1567</p>
             <span className="flex justify-between items-center">
               <Badge className="bg-red-500/40 text-red-500 flex gap-1 text-xs font-normal"><TrendingUp size={16} strokeWidth={1} /> 23,5%</Badge>
               <p className="text-[14px] text-muted-foreground">vs. previous month</p>
@@ -125,7 +125,7 @@ export default function Home() {
             </div>
 
             <h3 className="text-muted-foreground text-lg">Total Income</h3>
-            <p className="text-2xl font-semibold">350</p>
+            <p className="text-2xl font-semibold">$350,000</p>
             <span className="flex justify-between items-center">
               <Badge className="bg-[#34CAA5]/40 text-primary flex gap-1 text-xs font-normal"><TrendingUp size={16} strokeWidth={1} /> 23,5%</Badge>
               <p className="text-[14px] text-muted-foreground">vs. previous month</p>
