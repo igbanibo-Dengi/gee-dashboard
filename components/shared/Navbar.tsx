@@ -12,21 +12,23 @@ import {
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import Mobilenav from './Mobilenav'
+import Link from 'next/link'
 
 
 const Navbar = () => {
+
     return (
-        <header className="bg-background w-full py-4 px-4 border-b mx-auto z-50">
+        <header className="bg-background w-full py-3 pl-4 pr-4  md:pr-28 border-b mx-auto z-50 fixed">
             < div className="flex items-center justify-between mx-auto w-full" >
                 <span className='flex items-center gap-4'>
-                    <div>
+                    <Link href="/" className='md:hidden'>
                         <Image
                             src='/icons/Logo.svg'
                             width={40}
                             height={40}
                             alt='logo'
                         />
-                    </div>
+                    </Link>
                     <h1 className="text-md md:text-xl font-semibold hidden md:block">Dashboard</h1>
                 </span>
                 <div className="hidden md:flex items-center space-x-4">

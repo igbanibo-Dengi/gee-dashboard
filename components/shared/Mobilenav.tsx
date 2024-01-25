@@ -12,10 +12,8 @@ import {
     DropdownMenuSeparator,
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
-import { Bell, ChevronDownIcon, Menu, Search } from 'lucide-react'
+import { Bell, Menu, Search } from 'lucide-react'
 import Image from 'next/image'
-import { Input } from '../ui/input'
-import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar'
 import { ModeToggle } from './ModeToggle'
 import Link from 'next/link'
 
@@ -26,11 +24,12 @@ const Mobilenav = () => {
         <nav className='md:hidden '>
             <Sheet >
                 <SheetTrigger><Menu /></SheetTrigger>
-                <SheetContent className='flex flex-col items-end w-fit pt-10'>
-                    <span className='flex p-4 justify-end'>
-                        <Bell />
-                    </span>
+                <SheetContent className='flex flex-col justify-between items-end w-fit pt-10'>
+
                     <div className='flex justify-center items-center flex-col gap-4 w-fit'>
+                        <span className='flex p-4 justify-end'>
+                            <Bell />
+                        </span>
 
                         <Link href='/' className='block dark:hidden'>
                             <Image
@@ -116,29 +115,7 @@ const Mobilenav = () => {
                             />
                         </Link>
                     </div>
-                    {/* <DropdownMenu>
-                        <DropdownMenuTrigger>
-                            <div className="flex items-center space-x-2 border p-2 rounded-full">
-                                <Avatar>
-                                    <AvatarImage alt="Justin Bergson" src="/user.png" />
-                                    <AvatarFallback>JB</AvatarFallback>
-                                </Avatar>
-                                <div className="flex flex-col">
-                                    <span className="font-medium">Justin Bergson</span>
-                                    <span className="text-sm text-gray-500">JustinB@gmail.com</span>
-                                </div>
-                                <ChevronDownIcon className="w-5 h-5 text-gray-400" />
-                            </div>
-                        </DropdownMenuTrigger>
-                        <DropdownMenuContent className='w-full'>
-                            <DropdownMenuLabel>My Account</DropdownMenuLabel>
-                            <DropdownMenuSeparator />
-                            <DropdownMenuItem>Profile</DropdownMenuItem>
-                            <DropdownMenuItem>Billing</DropdownMenuItem>
-                            <DropdownMenuItem>Team</DropdownMenuItem>
-                            <DropdownMenuItem>Subscription</DropdownMenuItem>
-                        </DropdownMenuContent>
-                    </DropdownMenu> */}
+
                 </SheetContent>
             </Sheet>
         </nav>

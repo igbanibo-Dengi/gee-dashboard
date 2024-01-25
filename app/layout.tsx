@@ -29,12 +29,13 @@ export default function RootLayout({
         >
 
           <div className="flex absolute w-full">
-            <Navbar />
-          </div>
-          <div className="flex min-h-screen">
+
             <SideNav />
-            <div className="pt-24 w-full h-screen overflow-hidden overflow-y-auto no-scrollbar">
-              {children}
+            <div className="w-full h-screen overflow-hidden overflow-y-auto no-scrollbar">
+              <Navbar />
+              <div className="pt-24">
+                {children}
+              </div>
             </div>
           </div>
         </ThemeProvider>
